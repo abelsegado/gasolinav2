@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gasolina</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Gasolina</h1>
+        <form id="gasolineForm">
+            <label for="kilometers">Kilómetros del viaje:</label>
+            <input type="number" id="kilometers" required>
+            
+            <label for="gasPrice">Precio de la gasolina por litro (en €):</label>
+            <input type="number" id="gasPrice" step="0.01" required>
+            
+            <label for="consumption">Consumo medio del vehículo (litros/100km):</label>
+            <input type="number" id="consumption" step="0.1" required>
+            
+            <label for="passengers">Número de pasajeros (opcional):</label>
+            <input type="number" id="passengers">
+            
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
